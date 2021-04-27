@@ -4,6 +4,7 @@ from wtforms.fields.html5 import EmailField
 from wtforms.validators import DataRequired, Length, EqualTo, Email
 
 
+print('3. forms.py')
 class QuestionForm(FlaskForm):
     # 폼 라벨 form.subject.label
     subject = StringField('제목', validators=[DataRequired('제목은 필수입력 항목입니다.')])

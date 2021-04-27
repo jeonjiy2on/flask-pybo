@@ -19,7 +19,7 @@ migrate = Migrate()
 # db = SQLAlchemy()
 # migrate = Migrate()
 
-
+print('1. __init__.py')
 def create_app():
     app = Flask(__name__)
     app.config.from_object(config)

@@ -3,7 +3,7 @@ from werkzeug.utils import redirect
 
 bp = Blueprint('main', __name__, url_prefix='/')
 
-
+print('main_views.py')
 @bp.route('/hello')
 def hello_pybo():
     return 'Hello, Pybo!'

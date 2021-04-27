@@ -11,14 +11,15 @@ from ..views.auth_views import login_required
 
 bp = Blueprint('question', __name__, url_prefix='/question')
 
-
+print('question_views.py')
 @bp.route('/list/')
 def _list():
     # 입력 파라미터
     page = request.args.get('page', type=int, default=1)
+    print('page',page)
+    print('function _list')
     kw = request.args.get('kw', type=str, default='')
     so = request.args.get('so', type=str, default='recent')
-
     # 정렬
     if so == 'recommend':
         sub_query = db.session.query(question_voter.c.question_id, func.count('*').label('num_voter')) \

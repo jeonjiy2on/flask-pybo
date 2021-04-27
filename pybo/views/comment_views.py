@@ -9,6 +9,7 @@ from pybo.forms import CommentForm
 from pybo.models import Question, Comment, Answer
 from pybo.views.auth_views import login_required
 
+print('comment_views.py')
 bp = Blueprint('comment', __name__, url_prefix='/comment')
 
 # 질문 댓글 등록 

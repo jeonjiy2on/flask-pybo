@@ -6,6 +6,8 @@ from pybo import db
 from pybo.models import Question, Answer
 from pybo.views.auth_views import login_required
 
+print('vote_views.py')
+
 bp = Blueprint('vote', __name__, url_prefix='/vote')
 
 # 질문 추천 

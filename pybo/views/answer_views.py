@@ -8,6 +8,7 @@ from ..forms import AnswerForm
 from pybo.models import Question, Answer
 from .auth_views import login_required
 
+print('answer_views.py')
 
 bp = Blueprint('answer', __name__, url_prefix='/answer')
 
